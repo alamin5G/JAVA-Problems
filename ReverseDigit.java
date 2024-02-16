@@ -21,4 +21,8 @@ public class ReverseDigit {
         }
         return reverse;
     }
+
+    ///TC is O(n) where n is the length of the digti;
+    ///SC is O(1)
+    
 }
