@@ -340,8 +340,13 @@ public static void findMinMax(int[] array){
     System.out.println("Highest element : " + array[array.length-1]);
 }
 
-//Class ki? //Object ki?
+//Class ki?
+//todo - A class is a blueprint of an object, it is n custom data type that help us to store the real world object.
+
+// Object ki?
+    //todo - An object is nothing but an instance of a Class. It is similar to a real-world object.
 //Instance ki?
+
 //Constructor ki?
 //How to declare method in a class?
 //How to create an object?
