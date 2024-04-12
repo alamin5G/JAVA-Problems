@@ -11,11 +11,18 @@ public class JavaProblemSolution {
        /*    int[] a = {1, 2, 3, 4, 120, 5, 110, 91};
         System.out.println(largestElementInArray(a));*/
 
-        //2. done
-        int[] a = {1, 2, 3, 4, 120, 5, 110, 91, 93};
+        //3. done
+        /*int[] a = {1, 2, 3, 4, 120, 5, 110, 91, 93};
         int[] result = countEvenOrOdd(a);
         System.out.println("Total even = " + result[0]);
-        System.out.println("Total odd = " + result[1]);
+        System.out.println("Total odd = " + result[1]);*/
+
+        //4. done
+        int[] a = {1, 2, 3, 4};
+        int[] reversedArray = reverseAnArray(a);
+        for (int i = 0; i < reversedArray.length; i++) {
+            System.out.print(reversedArray[i]+ " ");
+        }
 
 
 
@@ -57,6 +64,16 @@ public class JavaProblemSolution {
         return count;
     }
 //4. Reverse an Array: Reverse the elements of an array.
+    public static int[] reverseAnArray(int[] array){
+        int[] reverse = new int[array.length];
+        int c = 0;
+        for (int i = array.length-1; i >=0 ; i--) {
+            reverse[c] = array[i];
+            c++;
+        }
+
+        return reverse;
+    }
 //5. Factorial Calculation: Write a program to calculate the factorial of a given number.*****: + recursive solution.
 //6. Palindrome Check: Check if a given string is a palindrome. (use char string)
 //7. Prime Number Check: Determine whether a given number is prime.
