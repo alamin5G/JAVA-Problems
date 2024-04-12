@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class JavaProblemSolution {
     public static void main(String[] args) {
@@ -79,7 +80,11 @@ public class JavaProblemSolution {
         //System.out.println(reverseAString("Apple"));
 
         //19. armstrong number
-        System.out.println(isArmstrong(151));
+        //System.out.println(isArmstrong(151));
+
+        //20.
+        int[] ar = { 1, 5, 23, 345, 32, 10,341, 293};
+        findMinMax(ar);
     }
 
 
@@ -329,7 +334,11 @@ public static boolean isArmstrong(int number) {
     return result == number;
 }
 //20. Find Minimum and Maximum: Write a program to find the minimum and maximum values in an array.
-
+public static void findMinMax(int[] array){
+    Arrays.sort(array);
+    System.out.println("Lowest element : " + array[0]);
+    System.out.println("Highest element : " + array[array.length-1]);
+}
 
 //Class ki? //Object ki?
 //Instance ki?
