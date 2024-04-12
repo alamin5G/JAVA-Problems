@@ -70,7 +70,10 @@ public class JavaProblemSolution {
         System.out.println(calculateAvg(a));*/
 
         //16. leap year
-        System.out.println(isLeapYear(100));
+        //System.out.println(isLeapYear(100));
+
+        //17. pyramid
+        printPyramid(10);
     }
 
 
@@ -276,6 +279,18 @@ public class JavaProblemSolution {
         }
     }
 //17. Pattern Printing: Print a pattern (e.g., a pyramid) using loops. (google patterns of loop)
+    public static void printPyramid(int rows){
+        for (int i = 1; i <= rows; i++) {
+            for (int j = 1; j <=rows-i; j++) {
+                System.out.printf(" ");
+            }
+
+            for (int k = 1; k <=2*i-1 ; k++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
 //18. String Reversal: Reverse a given string without using built-in functions. apple, elppa
 //19. Armstrong Number: Check if a number is an Armstrong number.
 //20. Find Minimum and Maximum: Write a program to find the minimum and maximum values in an array.
