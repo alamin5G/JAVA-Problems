@@ -73,7 +73,13 @@ public class JavaProblemSolution {
         //System.out.println(isLeapYear(100));
 
         //17. pyramid
-        printPyramid(10);
+        //printPyramid(10);
+
+        //18. reverse
+        //System.out.println(reverseAString("Apple"));
+
+        //19. armstrong number
+        System.out.println(isArmstrong(151));
     }
 
 
@@ -292,7 +298,36 @@ public class JavaProblemSolution {
         }
     }
 //18. String Reversal: Reverse a given string without using built-in functions. apple, elppa
+    public static String reverseAString(String string){
+        String reverse = "";
+        for (int i = string.length()-1; i >= 0; i--) {
+            reverse += string.charAt(i);
+        }
+
+        return reverse;
+    }
 //19. Armstrong Number: Check if a number is an Armstrong number.
+public static boolean isArmstrong(int number) {
+    int originalNumber, remainder, result = 0, n = 0;
+    originalNumber = number;
+
+    // Count number of digits
+    while (originalNumber != 0) {
+        originalNumber /= 10;
+        ++n;
+    }
+
+    originalNumber = number;
+
+    // Calculate result
+    while (originalNumber != 0) {
+        remainder = originalNumber % 10;
+        result += Math.pow(remainder, n);
+        originalNumber /= 10;
+    }
+
+    return result == number;
+}
 //20. Find Minimum and Maximum: Write a program to find the minimum and maximum values in an array.
 
 
