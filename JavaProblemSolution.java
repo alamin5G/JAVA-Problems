@@ -55,7 +55,7 @@ public class JavaProblemSolution {
         //multiplicationTable(3);
 
         //14. done
-        int[][] m1 = {{1, 2},{3,4}, {5, 6}};
+       /* int[][] m1 = {{1, 2},{3,4}, {5, 6}};
         int[][] m2 = {{7, 8}, {9, 10}, {11, 12}};
         int[][] mResult = addMatrices(m1, m2);
         for (int i = 0; i < mResult.length; i++) {
@@ -63,7 +63,11 @@ public class JavaProblemSolution {
                 System.out.print(mResult[i][j] + " ");
             }
             System.out.println();
-        }
+        }*/
+
+        //15. done
+        int[] a = {1, 2, 3, 4, 5};
+        System.out.println(calculateAvg(a));
 
     }
 
@@ -252,6 +256,13 @@ public class JavaProblemSolution {
     }
 
 //15. Calculate Average: Calculate the average of elements in an array.
+    public static double calculateAvg(int[] array){
+        int sum = 0;
+        for (int i = 0; i < array.length; i++) {
+            sum += array[i];
+        }
+        return (double) sum /2;
+    }
 //16. Leap Year Check: Determine whether a given year is a leap year.
 //17. Pattern Printing: Print a pattern (e.g., a pyramid) using loops. (google patterns of loop)
 //18. String Reversal: Reverse a given string without using built-in functions. apple, elppa
