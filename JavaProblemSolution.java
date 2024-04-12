@@ -66,9 +66,11 @@ public class JavaProblemSolution {
         }*/
 
         //15. done
-        int[] a = {1, 2, 3, 4, 5};
-        System.out.println(calculateAvg(a));
+       /* int[] a = {1, 2, 3, 4, 5};
+        System.out.println(calculateAvg(a));*/
 
+        //16. leap year
+        System.out.println(isLeapYear(100));
     }
 
 
@@ -264,6 +266,15 @@ public class JavaProblemSolution {
         return (double) sum /2;
     }
 //16. Leap Year Check: Determine whether a given year is a leap year.
+    public static boolean isLeapYear(int year){
+        if (year%4 == 0 && year % 100 != 0 ){
+            return true;
+        }else if (year%400 == 0){
+            return true;
+        }else {
+            return false;
+        }
+    }
 //17. Pattern Printing: Print a pattern (e.g., a pyramid) using loops. (google patterns of loop)
 //18. String Reversal: Reverse a given string without using built-in functions. apple, elppa
 //19. Armstrong Number: Check if a number is an Armstrong number.
