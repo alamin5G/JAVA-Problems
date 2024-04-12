@@ -44,14 +44,20 @@ public class JavaProblemSolution {
        /* int[] sortedArray = {1, 3, 4, 5, 7, 9, 11, 12};
         System.out.println(binarySearch(sortedArray, 13));*/
 
+        //11. done
+         int[] array = {1, 3, 4, 5, 7, 9, 11, 12, 2};
+        System.out.println(findDuplicates(array));
+
+
+
     }
 
 
     //1. Sum of Array Elements: Write a program to find the sum of all elements in an array.
     public static int sumOfArray(int[] array) {
         int sum = 0;
-        for (int i = 0; i < array.length; i++) {
-            sum += array[i];
+        for (int j : array) {
+            sum += j;
         }
         return sum;
     }
@@ -72,8 +78,8 @@ public class JavaProblemSolution {
         int[] count = new int[2];
         int even = 0;
         int odd = 0;
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] % 2 == 0) {
+        for (int j : array) {
+            if (j % 2 == 0) {
                 count[0] = ++even;
             } else {
                 count[1] = ++odd;
@@ -151,9 +157,9 @@ public class JavaProblemSolution {
 
 //9. Linear Search: Implement a linear search algorithm to find an element in an array. (true or false return type)
     public static boolean linearSearch(int[] array, int target){
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] == target){
-                return  true;
+        for (int j : array) {
+            if (j == target) {
+                return true;
             }
         }
 
@@ -182,6 +188,16 @@ public class JavaProblemSolution {
         return false;
     }
 //11. Duplicate Elements: Find and print duplicate elements in an array. (true or false return type)
+    public static boolean findDuplicates(int[] array){
+        for (int i = 0; i < array.length-1; i++) {
+            for (int j = i+1; j < array.length; j++) {
+                if (array[i] == array[j]){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 //12. Count Vowels and Consonants: Count the number of vowels and consonants in a given string. (a, e, i, o, u) 13. Multiplication Table: Print the multiplication table for a given number. (2 x 1 = 1, 2 x 2 = 4)
 //14. Matrix Addition: Add two matrices and print the result. 5x5 5x5 (return 2d array)
 //15. Calculate Average: Calculate the average of elements in an array.
