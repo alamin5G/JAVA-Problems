@@ -28,8 +28,10 @@ public class JavaProblemSolution {
        // System.out.println(factorial(0));
 
         // 6. done
-        System.out.println(checkPalindrome("redivider"));
+        //System.out.println(checkPalindrome("redivider"));
 
+        // 7. done
+        //System.out.println(determinePrimeNumber(23));
     }
 
 
@@ -102,8 +104,24 @@ public class JavaProblemSolution {
         return true;
     }
 //7. Prime Number Check: Determine whether a given number is prime.
+    public static boolean determinePrimeNumber(int number){
+
+        if (number==2){
+            return true;
+        }
+
+        for (int i = 2; i <= number/2; i++) {
+            if (number%i==0){
+                return false;
+            }
+        }
+
+        return true;
+    }
+
 //8. Fibonacci Series: Generate and print the first N elements of the Fibonacci series.*****:
 //+ recursive solution.
+
 //9. Linear Search: Implement a linear search algorithm to find an element in an array. (true or false return type) 10. Binary Search: Implement binary search for a sorted array.
 //11. Duplicate Elements: Find and print duplicate elements in an array. (true or false return type)
 //12. Count Vowels and Consonants: Count the number of vowels and consonants in a given string. (a, e, i, o, u) 13. Multiplication Table: Print the multiplication table for a given number. (2 x 1 = 1, 2 x 2 = 4)
