@@ -39,6 +39,11 @@ public class JavaProblemSolution {
         //9. done
         /*int[] array = {5, 2, 3, 8, 11, 9 , 90, 5, 10};
         System.out.println(linearSearch(array, 12));*/
+
+        //10. done
+       /* int[] sortedArray = {1, 3, 4, 5, 7, 9, 11, 12};
+        System.out.println(binarySearch(sortedArray, 13));*/
+
     }
 
 
@@ -157,6 +162,25 @@ public class JavaProblemSolution {
 
 // 10. Binary Search: Implement binary search for a sorted array.
 
+    public static boolean binarySearch(int[] sortedArray, int target){
+        int left = 0;
+        int right = sortedArray.length;
+        int mid = (left+right)/2;
+        int len = sortedArray.length;
+
+        while (mid != 0 && mid != len){
+            if (sortedArray[mid] == target){
+                return true;
+            } else if (target < sortedArray[mid]) {
+                right = mid-1;
+                mid = (left+right)/2;
+            }else {
+                left = mid+1;
+                mid = (left+right)/2;
+            }
+        }
+        return false;
+    }
 //11. Duplicate Elements: Find and print duplicate elements in an array. (true or false return type)
 //12. Count Vowels and Consonants: Count the number of vowels and consonants in a given string. (a, e, i, o, u) 13. Multiplication Table: Print the multiplication table for a given number. (2 x 1 = 1, 2 x 2 = 4)
 //14. Matrix Addition: Add two matrices and print the result. 5x5 5x5 (return 2d array)
