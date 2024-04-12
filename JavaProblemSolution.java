@@ -45,8 +45,11 @@ public class JavaProblemSolution {
         System.out.println(binarySearch(sortedArray, 13));*/
 
         //11. done
-         int[] array = {1, 3, 4, 5, 7, 9, 11, 12, 2};
-        System.out.println(findDuplicates(array));
+        /* int[] array = {1, 3, 4, 5, 7, 9, 11, 12, 2};
+        System.out.println(findDuplicates(array));*/
+
+        //12. done
+        countVowelsAndCons("My Name is Alamin");
 
 
 
@@ -198,7 +201,25 @@ public class JavaProblemSolution {
         }
         return false;
     }
-//12. Count Vowels and Consonants: Count the number of vowels and consonants in a given string. (a, e, i, o, u) 13. Multiplication Table: Print the multiplication table for a given number. (2 x 1 = 1, 2 x 2 = 4)
+//12. Count Vowels and Consonants: Count the number of vowels and consonants in a given string. (a, e, i, o, u)
+    public static void countVowelsAndCons(String s){
+        String caseSens = s.replaceAll("\\s", "");
+        caseSens = caseSens.toLowerCase();
+        int countVowels = 0;
+        int countCons = 0;
+        for (int i = 0; i < caseSens.length(); i++) {
+            if (caseSens.charAt(i) == 'a' || caseSens.charAt(i) == 'e' || caseSens.charAt(i) == 'i' || caseSens.charAt(i) == 'o' || caseSens.charAt(i) == 'u'){
+                countVowels++;
+            }else {
+                countCons++;
+            }
+        }
+
+        System.out.println("Total Vowels: " + countVowels);
+        System.out.println("Total Cons: " + countCons);
+    }
+// 13. Multiplication Table: Print the multiplication table for a given number. (2 x 1 = 1, 2 x 2 = 4)
+
 //14. Matrix Addition: Add two matrices and print the result. 5x5 5x5 (return 2d array)
 //15. Calculate Average: Calculate the average of elements in an array.
 //16. Leap Year Check: Determine whether a given year is a leap year.
