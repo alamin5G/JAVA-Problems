@@ -32,6 +32,9 @@ public class JavaProblemSolution {
 
         // 7. done
         //System.out.println(determinePrimeNumber(23));
+
+        //8. done
+        fibonacciSeries(10);
     }
 
 
@@ -121,7 +124,20 @@ public class JavaProblemSolution {
 
 //8. Fibonacci Series: Generate and print the first N elements of the Fibonacci series.*****:
 //+ recursive solution.
-
+    public static void fibonacciSeries(int n){
+        int first = 0;
+        int second = 1;
+        int last = first + second;
+        System.out.print(first + " " + second);
+        if (n>1){
+            for (int i = 2; i <= n; i++) {
+                first = second;
+                second = last;
+                System.out.print(" " + last);
+                last = first + second;
+            }
+        }
+    }
 //9. Linear Search: Implement a linear search algorithm to find an element in an array. (true or false return type) 10. Binary Search: Implement binary search for a sorted array.
 //11. Duplicate Elements: Find and print duplicate elements in an array. (true or false return type)
 //12. Count Vowels and Consonants: Count the number of vowels and consonants in a given string. (a, e, i, o, u) 13. Multiplication Table: Print the multiplication table for a given number. (2 x 1 = 1, 2 x 2 = 4)
