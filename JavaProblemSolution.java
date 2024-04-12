@@ -34,7 +34,11 @@ public class JavaProblemSolution {
         //System.out.println(determinePrimeNumber(23));
 
         //8. done
-        fibonacciSeries(10);
+        //fibonacciSeries(10);
+
+        //9. done
+        /*int[] array = {5, 2, 3, 8, 11, 9 , 90, 5, 10};
+        System.out.println(linearSearch(array, 12));*/
     }
 
 
@@ -138,7 +142,21 @@ public class JavaProblemSolution {
             }
         }
     }
-//9. Linear Search: Implement a linear search algorithm to find an element in an array. (true or false return type) 10. Binary Search: Implement binary search for a sorted array.
+
+
+//9. Linear Search: Implement a linear search algorithm to find an element in an array. (true or false return type)
+    public static boolean linearSearch(int[] array, int target){
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == target){
+                return  true;
+            }
+        }
+
+        return false;
+    }
+
+// 10. Binary Search: Implement binary search for a sorted array.
+
 //11. Duplicate Elements: Find and print duplicate elements in an array. (true or false return type)
 //12. Count Vowels and Consonants: Count the number of vowels and consonants in a given string. (a, e, i, o, u) 13. Multiplication Table: Print the multiplication table for a given number. (2 x 1 = 1, 2 x 2 = 4)
 //14. Matrix Addition: Add two matrices and print the result. 5x5 5x5 (return 2d array)
