@@ -49,8 +49,10 @@ public class JavaProblemSolution {
         System.out.println(findDuplicates(array));*/
 
         //12. done
-        countVowelsAndCons("My Name is Alamin");
+        //countVowelsAndCons("My Name is Alamin");
 
+        //13. done
+        multiplicationTable(3);
 
 
     }
@@ -219,7 +221,11 @@ public class JavaProblemSolution {
         System.out.println("Total Cons: " + countCons);
     }
 // 13. Multiplication Table: Print the multiplication table for a given number. (2 x 1 = 1, 2 x 2 = 4)
-
+    public static void multiplicationTable(int number){
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(number + " X " + i + " = " + i*number);
+        }
+    }
 //14. Matrix Addition: Add two matrices and print the result. 5x5 5x5 (return 2d array)
 //15. Calculate Average: Calculate the average of elements in an array.
 //16. Leap Year Check: Determine whether a given year is a leap year.
