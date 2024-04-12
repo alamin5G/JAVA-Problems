@@ -18,11 +18,17 @@ public class JavaProblemSolution {
         System.out.println("Total odd = " + result[1]);*/
 
         //4. done
-        int[] a = {1, 2, 3, 4};
+       /* int[] a = {1, 2, 3, 4};
         int[] reversedArray = reverseAnArray(a);
-        for (int i = 0; i < reversedArray.length; i++) {
-            System.out.print(reversedArray[i]+ " ");
-        }
+        for (int j : reversedArray) {
+            System.out.print(j + " ");
+        }*/
+
+        //5. done
+        System.out.println(factorial(0));
+
+
+
 
 
 
@@ -75,7 +81,15 @@ public class JavaProblemSolution {
         return reverse;
     }
 //5. Factorial Calculation: Write a program to calculate the factorial of a given number.*****: + recursive solution.
+public static int factorial(int n){
+        if (n==1 || n==0){
+            return 1;
+        }
+        return n * factorial(n-1);
+
+}
 //6. Palindrome Check: Check if a given string is a palindrome. (use char string)
+
 //7. Prime Number Check: Determine whether a given number is prime.
 //8. Fibonacci Series: Generate and print the first N elements of the Fibonacci series.*****:
 //+ recursive solution.
