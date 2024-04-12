@@ -25,12 +25,10 @@ public class JavaProblemSolution {
         }*/
 
         //5. done
-        System.out.println(factorial(0));
+       // System.out.println(factorial(0));
 
-
-
-
-
+        // 6. done
+        System.out.println(checkPalindrome("redivider"));
 
     }
 
@@ -69,27 +67,40 @@ public class JavaProblemSolution {
         }
         return count;
     }
-//4. Reverse an Array: Reverse the elements of an array.
-    public static int[] reverseAnArray(int[] array){
+
+    //4. Reverse an Array: Reverse the elements of an array.
+    public static int[] reverseAnArray(int[] array) {
         int[] reverse = new int[array.length];
         int c = 0;
-        for (int i = array.length-1; i >=0 ; i--) {
+        for (int i = array.length - 1; i >= 0; i--) {
             reverse[c] = array[i];
             c++;
         }
 
         return reverse;
     }
-//5. Factorial Calculation: Write a program to calculate the factorial of a given number.*****: + recursive solution.
-public static int factorial(int n){
-        if (n==1 || n==0){
+
+    //5. Factorial Calculation: Write a program to calculate the factorial of a given number.*****: + recursive solution.
+    public static int factorial(int n) {
+        if (n == 1 || n == 0) {
             return 1;
         }
-        return n * factorial(n-1);
+        return n * factorial(n - 1);
 
-}
-//6. Palindrome Check: Check if a given string is a palindrome. (use char string)
+    }
 
+    //6. Palindrome Check: Check if a given string is a palindrome. (use char string)
+    public static boolean checkPalindrome(String string) {
+        int j = string.length()-1;
+        for (int i = 0; i < string.length()/2; i++) {
+            if (string.charAt(i) != string.charAt(j)){
+                return false;
+            }
+            j--;
+        }
+
+        return true;
+    }
 //7. Prime Number Check: Determine whether a given number is prime.
 //8. Fibonacci Series: Generate and print the first N elements of the Fibonacci series.*****:
 //+ recursive solution.
