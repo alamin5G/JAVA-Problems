@@ -52,8 +52,18 @@ public class JavaProblemSolution {
         //countVowelsAndCons("My Name is Alamin");
 
         //13. done
-        multiplicationTable(3);
+        //multiplicationTable(3);
 
+        //14. done
+        int[][] m1 = {{1, 2},{3,4}, {5, 6}};
+        int[][] m2 = {{7, 8}, {9, 10}, {11, 12}};
+        int[][] mResult = addMatrices(m1, m2);
+        for (int i = 0; i < mResult.length; i++) {
+            for (int j = 0; j < mResult[0].length; j++) {
+                System.out.print(mResult[i][j] + " ");
+            }
+            System.out.println();
+        }
 
     }
 
@@ -227,6 +237,20 @@ public class JavaProblemSolution {
         }
     }
 //14. Matrix Addition: Add two matrices and print the result. 5x5 5x5 (return 2d array)
+    public static int[][] addMatrices(int[][] matrix1, int[][] matrix2){
+        int row = matrix1.length;
+        int col = matrix1[0].length;
+        int[][] result = new int[row][col];
+
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < col; j++) {
+                result[i][j] = matrix1[i][j] + matrix2[i][j];
+            }
+        }
+
+        return result;
+    }
+
 //15. Calculate Average: Calculate the average of elements in an array.
 //16. Leap Year Check: Determine whether a given year is a leap year.
 //17. Pattern Printing: Print a pattern (e.g., a pyramid) using loops. (google patterns of loop)
