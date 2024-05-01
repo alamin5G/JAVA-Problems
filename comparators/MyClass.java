@@ -37,6 +37,18 @@ public class MyClass {
         Collections.sort(list, new MyComparator());
         System.out.println("After using Comparator: ");
         printListData(list);
+
+        //now we will use the lambda expression instead of comparator interface
+        list.add(13);
+        list.add(48);
+        list.add(12);
+        Collections.sort(list, (a, b) -> a - b);
+        System.out.println("After using lambda expression: ");
+        printListData(list);
+        System.out.println("Sorting descending order using lambda expression: ");
+        Collections.sort(list, (a, b) -> b - a);
+        printListData(list);
+
     }
 
 
