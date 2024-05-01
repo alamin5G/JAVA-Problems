@@ -341,23 +341,62 @@ public static void findMinMax(int[] array){
 }
 
 //Class ki?
-//todo - A class is a blueprint of an object, it is n custom data type that help us to store the real world object.
+//todo - A class in Java is a blueprint for creating objects. It defines the properties (attributes) and behaviors (methods) of objects.
+// Objects are instances of classes.
 
 // Object ki?
-    //todo - An object is nothing but an instance of a Class. It is similar to a real-world object.
+    //todo - An object is nothing but an instance of a Class. In Java, an object is a fundamental unit of data that represents a real-world entity or concept.
+    // It is an instance of a class, which serves as a blueprint for creating objects.
+    // Objects encapsulate both data (attributes or fields) and behavior (methods or functions) related to the entity they represent.
+
 //Instance ki?
+    //todo - An instance, in the context of object-oriented programming, refers to a specific realization or occurrence of a class.
+    // When you create an object from a class, you are creating an instance of that class.
+    // Each instance of a class has its own set of data (state) and can execute the methods defined in the class.
 
 //Constructor ki?
-//How to declare method in a class?
-//How to create an object?
-//How to assign value in object through constructor? //How to call a method from an object?
+    //todo - Constructors in Java are special methods used to initialize objects of a class.
+    // They have the same name as the class and are called automatically when an object is created.
 
+//How to declare method in a class?
+    //accessSpecifier returnType methodName(parameterList) {
+    //    // Method body
+    //}
+    //todo - Let's break down each part:
+    // accessSpecifier: Specifies the visibility of the method. It can be public, private, protected, or package-private (no specifier).
+    // returnType: Specifies the data type of the value returned by the method. If the method does not return anything, use void.
+    // methodName: The name of the method. This is used to call the method later in your code.
+    // parameterList: A list of parameters (if any) that the method accepts. Each parameter consists of a data type followed by the parameter name.
+    // If the method doesn't take any parameters, you can leave the parentheses empty.
+    // Method body: Contains the code that defines what the method does. This is enclosed within curly braces {}.
+
+//How to create an object?
+    //todo - Define a class: You start by defining a class using the class keyword. This class will serve as a blueprint for creating objects.
+    // Instantiate the class: Next, you use the new keyword followed by the class name and parentheses to create an instance of the class.
+
+//How to assign value in object through constructor?
+    //todo - Define instance variables: Declare instance variables within your class to represent the properties of the object.
+    // Define a constructor: Create a constructor method in your class. This constructor should accept parameters that correspond to the properties you want to initialize.
+    // Initialize instance variables: Inside the constructor, assign the parameter values to the instance variables.
+
+// How to call a method from an object?
+    //todo - objectName.methodName(arguments);
+    // objectName is the name of the object you want to call the method on.
+    // methodName is the name of the method you want to call.
+    // arguments are any parameters required by the method (if applicable).
 
 //What is recursion?
-//What is base case?
-//What is recursive case? //What is stack memory?
-//What is heap memory?
+    //todo - Recursion is a programming technique where a function calls itself directly or indirectly to solve a problem.
 
+//What is base case?
+    // todo - an end point to prevent the further recursion.
+//What is recursive case?
+    //todo - an recursive case is nothing but the invoke the recursive method
+// What is stack memory?
+    //todo - Stack memory is a region of a computer's memory system used for storing variables that are created inside functions or methods.
+    // In Java, each thread has its own stack memory, which is used for method invocations and local variables.
+//What is heap memory?
+    //todo - Heap memory allows for dynamic allocation and de-allocation of memory during runtime. Each object created with new keyword is stored in heap memory.
 
 //1. Create a class.
 //2. Create an object.
