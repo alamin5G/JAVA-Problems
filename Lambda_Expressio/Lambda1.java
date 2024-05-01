@@ -23,6 +23,7 @@ public class Lambda1 {
         Employee employee2 = () -> {
             return "Software Engineer";
         };
+        System.out.println(employee2.getName());
 
         // or the 2nd type lambda expression
         Employee employee3 = () -> "Java Developer";
@@ -32,7 +33,21 @@ public class Lambda1 {
         //means, there is no use of SoftwareEngineer class
         //now we can remove the SoftwareEngineer class as well without any error.
 
-        
+        /*
+         * Now we will use MyRunnable class that implements the Runnable interface
+         * 
+         */
+        Runnable runnable  = new MyRunnable();
+        runnable.run();
+
+        // now we can do the same task using Lambda expression
+        Runnable runnable2 = () -> {
+            for (int i = 1; i <=10; i++) {
+                System.out.println("Run Lambda " + i);
+            }
+        };
+
+        runnable2.run();
 
     }
 }
