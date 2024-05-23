@@ -12,6 +12,7 @@ public class CountingSort {
             count[num]++;
         }
 
+
         // Build the sorted array
         int index = 0;
         for (int i = 0; i < count.length; i++) {
